@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="description" content="Alphacoeur Serveur : installer le cerveau d'Alphacoeur sur un PC Windows du bureau pour toute l'équipe. Guide simple pour l'administrateur.">
+<title>Alphacoeur Serveur — Guide de l'administrateur / Administrator guide</title>
+<style>
+  body { font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Roboto, sans-serif; max-width: 720px; margin: 0 auto; padding: 32px 16px; color: #1d1d1f; background: #fff; overflow-wrap: break-word; }
+  h1 { font-size: 28px; } h2 { font-size: 20px; margin-top: 32px; } h3 { font-size: 17px; margin: 18px 0 4px; }
+  li { margin: 4px 0; } .date { color: #6e6e73; }
+  a { color: #0066cc; } .lang { text-align: right; margin: 0 0 8px; font-size: 15px; }
+  .note { border-left: 3px solid #d2d2d7; padding: 2px 0 2px 12px; }
+  hr { border: 0; border-top: 1px solid #d2d2d7; margin: 48px 0 24px; }
+  table { border-collapse: collapse; width: 100%; font-size: 15px; margin: 8px 0; }
+  th, td { text-align: left; vertical-align: top; padding: 6px 8px; border-bottom: 1px solid #d2d2d7; }
+  th { font-weight: 600; }
+  code, kbd { font: 14px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; background: #f5f5f7; padding: 1px 4px; border-radius: 4px; }
+  @media (prefers-color-scheme: dark) { body { background: #000; color: #f5f5f7; } .date { color: #a1a1a6; } a { color: #2997ff; } .note, hr, th, td { border-color: #424245; } code, kbd { background: #1d1d1f; } }
+</style>
+</head>
+<body>
+
+<section id="fr" lang="fr">
+<p class="lang"><a href="#en" hreflang="en" lang="en">English version</a> · <a href="./">Accueil</a></p>
+<h1>Alphacoeur Serveur : guide de l'administrateur</h1>
+<p class="date">Dernière mise à jour : 6 novembre 2026</p>
+
+<p>Avec <strong>Alphacoeur Serveur</strong>, un PC Windows du bureau fait tourner le cerveau d'Alphacoeur pour toute l'équipe. Les iPhone, iPad, Mac, téléphones Android et PC de l'équipe s'y connectent par le Wi‑Fi ou le réseau du bureau. <strong>Les conversations restent sur ce PC</strong> : rien ne part chez l'éditeur. Pas besoin d'être informaticien : comptez une demi-heure, surtout pour le téléchargement du cerveau.</p>
+
+<p>Sommaire : <a href="#fr-prerequis">Ce qu'il faut</a> · <a href="#fr-puissance">Plus de puissance ?</a> · <a href="#fr-installer">Installer</a> · <a href="#fr-activer">Activer le mode serveur</a> · <a href="#fr-abonnement">S'abonner</a> · <a href="#fr-appareils">Ajouter des appareils</a> · <a href="#fr-utilisateurs">Utilisateurs</a> · <a href="#fr-maj">Mises à jour</a> · <a href="#fr-depannage">Dépannage</a></p>
+
+<h2 id="fr-prerequis">1. Ce qu'il faut</h2>
+<ul>
+  <li>Un PC <strong>Windows 10</strong> (version 2004 ou plus récente), <strong>Windows 11</strong>, ou <strong>Windows Server 2022 / 2025 avec l'expérience utilisateur</strong> (bureau Windows). PC 64 bits (x64).</li>
+  <li>Un PC qui reste <strong>allumé</strong> pendant les heures de travail, de préférence relié à la box par un câble réseau.</li>
+  <li>Au moins <strong>10 Go</strong> de place libre sur le disque.</li>
+  <li>Une connexion Internet pour l'installation (téléchargement du cerveau) et les mises à jour. Les conversations, elles, n'utilisent pas Internet.</li>
+  <li>Un compte administrateur Windows, le temps de l'installation.</li>
+</ul>
+<h3 id="fr-puissance">Plus de puissance ?</h3>
+<p>Le cerveau d'Alphacoeur tourne sur l'appareil : sa taille dépend de la <strong>mémoire de l'appareil</strong>. Plus il y a de mémoire, plus le cerveau est grand, et plus les réponses sont riches et précises. Alphacoeur choisit tout seul le meilleur cerveau qui tient sur l'appareil.</p>
+<p>Pour des réponses plus puissantes : installez Alphacoeur sur un <strong>ordinateur plus puissant</strong>, à la maison ou au bureau, activez le <strong>mode serveur</strong>, puis connectez-y vos téléphones, tablettes et ordinateurs. Ils profitent alors du grand cerveau de cet ordinateur, par votre réseau local : <strong>rien ne part sur Internet</strong>.</p>
+<table>
+  <thead><tr><th scope="col">Mémoire de l'appareil</th><th scope="col">Cerveau (taille du modèle)</th></tr></thead>
+  <tbody><tr><td>3 Go</td><td>0.6B</td></tr><tr><td>6 Go</td><td>1.7B</td></tr><tr><td>8 Go</td><td>4B</td></tr><tr><td>12 Go et plus</td><td>8B</td></tr><tr><td>PC 16 Go + carte graphique 12 Go</td><td>14B</td></tr><tr><td>Serveur 64 à 96 Go</td><td>80B</td></tr><tr><td>Serveur 256 Go et plus</td><td>235B et plus</td></tr></tbody>
+</table>
+<p class="note">Repères indicatifs : le choix exact dépend aussi de la carte graphique, de la place libre et des cerveaux disponibles dans le catalogue au moment de l'installation.</p>
+<p>Pour connaître la mémoire du PC : Paramètres › Système › Informations système (« Mémoire RAM installée »).</p>
+<p class="note">Conseil : <strong>16 Go de mémoire</strong>, et une carte graphique récente si l'équipe dépasse 5 personnes. Le serveur répond à une personne à la fois et met les autres en file d'attente quelques secondes.</p>
+
+<h2 id="fr-installer">2. Installer (double-clic)</h2>
+<ol>
+  <li>Copiez le dossier d'installation d'Alphacoeur sur le PC, puis <strong>double-cliquez sur « Installer-Alphacoeur.cmd »</strong>. (Avec le Microsoft Store, installez plutôt Alphacoeur depuis le Store, puis lancez l'installateur pour le service serveur s'il vous est fourni.)</li>
+  <li>Windows demande l'autorisation : répondez <strong>Oui</strong>. C'est normal, l'installateur en a besoin une fois.</li>
+  <li>« <strong>Ce PC sera-t-il le serveur de l'équipe ?</strong> » : <strong>Oui</strong>. Le serveur démarrera avec Windows, même quand personne n'est connecté, et redémarrera tout seul après une panne.</li>
+  <li>« <strong>Autoriser les appareils du réseau local à joindre le serveur ?</strong> » : <strong>Oui</strong>. Une seule règle est ajoutée au pare-feu de Windows (port 47843, réseau local seulement). Rien n'est ouvert vers Internet.</li>
+  <li>Ouvrez Alphacoeur : l'assistant « <strong>Bienvenue dans l'édition Serveur</strong> » vous guide en 4 étapes (bienvenue, abonnement, cerveau, premier appareil). Le cerveau se télécharge tout seul ; vous pouvez continuer pendant ce temps.</li>
+</ol>
+
+<h2 id="fr-activer">2 bis. Activer le mode serveur</h2>
+<p><strong>Sur quels appareils ?</strong> Le mode serveur existe aujourd'hui sur les <strong>PC Windows</strong> (Windows 10 version 2004 ou plus récent, Windows 11, Windows Server 2022 / 2025 avec l'expérience utilisateur). <strong>Mac</strong> avec puce Apple : bientôt, dans la même app. Les <strong>téléphones et tablettes</strong> (iPhone, iPad, Android) ne peuvent pas être serveurs : ils se connectent à un serveur.</p>
+<p><strong>Sur l'ordinateur qui sera le serveur :</strong></p>
+<ol>
+  <li>Ouvrez Alphacoeur › <strong>Réglages › Mode serveur</strong>, puis touchez <strong>« Activer le mode serveur »</strong>.</li>
+  <li><strong>Abonnement</strong> : choisissez le palier ; le paiement passe par la boutique (Microsoft Store sur le PC ; sinon « S'abonner depuis mon téléphone »).</li>
+  <li><strong>Téléchargement du cerveau</strong> : le meilleur cerveau pour cet ordinateur se télécharge et s'installe tout seul (taille affichée avant).</li>
+  <li><strong>QR code</strong> : un QR code et un code à 6 chiffres s'affichent pour connecter le premier appareil.</li>
+</ol>
+<p><strong>Sur les téléphones, tablettes et autres ordinateurs :</strong> Alphacoeur › <strong>Réglages › Se connecter à un serveur</strong>, sur le même réseau (Wi‑Fi ou câble). Scannez le QR code, ou tapez le code à 6 chiffres et vérifiez que l'empreinte est la même que sur le serveur. Pour se déconnecter : même écran, « Retirer ce serveur » ; l'appareil reprend alors son propre cerveau.</p>
+<p><strong>Désactiver le mode serveur :</strong> sur le serveur, Réglages › Mode serveur › « Désactiver le mode serveur ». Les appareils connectés reprennent leur propre cerveau. Pensez à résilier l'abonnement dans la boutique ; pour tout effacer du PC (comptes, mémoire, journal) : « Installer-Alphacoeur.cmd /desinstaller /tout ».</p>
+
+<h2 id="fr-abonnement">3. S'abonner dans l'app</h2>
+<p>L'abonnement se prend <strong>uniquement dans l'app</strong>, par une boutique (Microsoft Store, App Store ou Google Play). Il n'y a ni virement, ni facture de l'éditeur, ni clé à acheter ailleurs.</p>
+<table>
+  <thead><tr><th scope="col">Palier</th><th scope="col">Utilisateurs</th><th scope="col">En plus</th></tr></thead>
+  <tbody>
+    <tr><td>Serveur solo</td><td>1</td><td>—</td></tr>
+    <tr><td>Équipe</td><td>jusqu'à 5</td><td>versions et cerveaux en avant-première</td></tr>
+    <tr><td>Entreprise</td><td>jusqu'à 15</td><td>avant-première ; compléments +5 et +10 utilisateurs, cumulables</td></tr>
+  </tbody>
+</table>
+<p>Le prix de votre pays est affiché par la boutique avant l'achat.</p>
+<ul>
+  <li><strong>Sur un PC avec le Microsoft Store</strong> : à l'étape « Étape 2 sur 4 : l'abonnement », cliquez sur le palier ; la fenêtre d'achat du Microsoft Store s'ouvre.</li>
+  <li><strong>Sur Windows Server (sans Microsoft Store)</strong> : cliquez sur « <strong>S'abonner depuis mon téléphone</strong> », scannez le code affiché avec Alphacoeur sur votre iPhone, iPad, Mac ou téléphone Android, puis choisissez l'abonnement dans Réglages › Se connecter à un serveur. Le serveur s'active tout seul.</li>
+  <li>Après un achat fait ailleurs, cliquez sur « <strong>Actualiser mes achats</strong> ».</li>
+</ul>
+<p>L'abonnement se renouvelle chaque mois par la boutique. Si le renouvellement n'arrive pas, le serveur continue <strong>7 jours</strong> avec un avertissement, puis les appareils reprennent leur propre cerveau. <strong>Résilier, changer de palier, obtenir une facture avec TVA</strong> : dans la boutique où l'abonnement a été pris (compte Microsoft, compte Apple ou Google Play › Abonnements).</p>
+
+<h2 id="fr-appareils">4. Ajouter des appareils</h2>
+<ol>
+  <li>Sur le PC serveur, dans Alphacoeur › Réglages › Mode serveur › Utilisateurs, choisissez la personne (ou créez-la, voir plus bas), puis <strong>« Ajouter un appareil »</strong>.</li>
+  <li>Un <strong>QR code</strong> et un <strong>code à 6 chiffres</strong> s'affichent. Ils servent une seule fois et pendant 10 minutes.</li>
+  <li>Sur l'appareil (connecté au même réseau) : Alphacoeur › Réglages › <strong>Se connecter à un serveur</strong>. Le serveur y apparaît tout seul.</li>
+  <li>Scannez le QR code, ou tapez le code à 6 chiffres puis vérifiez que l'<strong>empreinte</strong> affichée sur l'appareil est la même que sur le PC serveur (« Empreinte du certificat »).</li>
+</ol>
+<p>C'est tout : l'appareil utilise maintenant le cerveau du serveur. Il se reconnecte seul après une coupure ou une mise à jour.</p>
+
+<h2 id="fr-utilisateurs">5. Utilisateurs</h2>
+<ul>
+  <li><strong>Ajouter une personne</strong> : Utilisateurs › « Nouvelle personne… », tapez son prénom, puis « Afficher le code » pour appairer son premier appareil. Une personne peut avoir plusieurs appareils.</li>
+  <li><strong>Renommer</strong> ou <strong>Retirer</strong> une personne : ses appareils sont déconnectés et sa mémoire est effacée du serveur.</li>
+  <li><strong>Appareil perdu ou remplacé</strong> : « Retirer l'appareil » sur la ligne de la personne.</li>
+  <li>Le nombre de personnes est limité par le palier (« utilisateurs sur … permis par la licence »).</li>
+  <li>Chaque personne a sa propre mémoire, chiffrée sur le serveur, que les autres ne voient pas. Le journal du serveur note qui se connecte et quand, <strong>jamais le contenu des messages</strong>.</li>
+</ul>
+
+<h2 id="fr-maj">6. Mises à jour</h2>
+<ul>
+  <li>Le serveur vérifie les mises à jour quelques minutes après le démarrage puis toutes les 6 heures, et les installe <strong>tout seul</strong>. Les réponses en cours se terminent d'abord ; les appareils patientent quelques secondes et se reconnectent seuls.</li>
+  <li>Si une nouvelle version ne démarre pas, le serveur <strong>revient tout seul à la précédente</strong>.</li>
+  <li>Comptes, mémoire, abonnement et appairages sont gardés : rien à refaire sur les appareils.</li>
+  <li>Paliers Équipe et Entreprise : « Options avancées › Canal des mises à jour › Anticipé (avant-première) » pour recevoir les versions et les cerveaux en avance. « Stable » convient à la plupart des bureaux.</li>
+  <li>Les mises à jour sont signées par l'éditeur ; le serveur refuse tout paquet dont la signature ne correspond pas.</li>
+</ul>
+
+<h2 id="fr-depannage">7. Dépannage</h2>
+<h3>Un appareil ne trouve pas le serveur</h3>
+<ul>
+  <li>Le PC serveur est-il allumé, et pas en veille ? (Paramètres › Système › Alimentation : mise en veille « Jamais » sur secteur.)</li>
+  <li>L'appareil est-il sur le <strong>même réseau</strong> que le serveur ? Un Wi‑Fi « invités » isole les appareils : il ne marche pas.</li>
+  <li>Utilisez le <strong>QR code</strong> plutôt que le code à 6 chiffres : il contient l'adresse du serveur, même quand le réseau bloque la découverte automatique.</li>
+  <li>Sur iPhone, iPad ou Mac, autorisez « Réseau local » pour Alphacoeur ; sur Android, « Appareils à proximité ».</li>
+</ul>
+<h3>Pare-feu</h3>
+<ul>
+  <li>L'installateur crée la règle « <strong>Alphacoeur Serveur (réseau local)</strong> » : port <strong>47843</strong> (TCP), réseau local seulement. Si vous avez répondu Non, relancez « Installer-Alphacoeur.cmd ».</li>
+  <li>Dans Paramètres › Réseau et Internet, le réseau du PC serveur doit être un <strong>réseau privé</strong>, pas public.</li>
+  <li>Un antivirus avec son propre pare-feu peut bloquer le serveur : autorisez le port 47843 (TCP) pour le réseau local.</li>
+  <li>« Le serveur n'a pas pu démarrer : son port est déjà utilisé » : le service tourne sans doute déjà ; redémarrez le PC.</li>
+</ul>
+<h3>Wi‑Fi</h3>
+<ul>
+  <li>Les répéteurs et le Wi‑Fi maillé conviennent, tant que tout est sur le même réseau.</li>
+  <li>Si le serveur change d'adresse (box remplacée), les appareils le retrouvent seuls ; sinon, ré-appairez avec un nouveau QR code.</li>
+</ul>
+<h3>Utiliser le serveur hors du bureau : VPN</h3>
+<p>Le serveur <strong>refuse les connexions venant d'Internet</strong>. N'ouvrez <strong>jamais</strong> le port 47843 sur la box : cela ne marcherait pas et exposerait le PC. Pour l'utiliser en déplacement ou en télétravail, passez par un <strong>VPN</strong> :</p>
+<ul>
+  <li><strong>Tailscale</strong> (le plus simple) : installez-le sur le serveur et sur les appareils, avec le même compte. Si Tailscale tourne quand vous affichez le QR code, l'adresse VPN y est incluse.</li>
+  <li><strong>WireGuard</strong> (sur la box ou un PC du bureau) : si ses adresses sont dans un autre sous-réseau privé, ajoutez ce sous-réseau à la règle de pare-feu « Alphacoeur Serveur (réseau local) ».</li>
+</ul>
+<h3>Réponses lentes</h3>
+<ul>
+  <li>Plusieurs personnes à la fois : chacune attend son tour (« File d'attente » sur l'écran du serveur).</li>
+  <li>PC sans carte graphique : un cerveau plus petit ou plus lent est choisi. Ajouter de la mémoire ou une carte graphique permet un meilleur cerveau.</li>
+</ul>
+<h3>Désinstaller</h3>
+<p><code>Installer-Alphacoeur.cmd /desinstaller</code> retire l'app et le service ; ajoutez <code>/tout</code> pour effacer aussi les données du serveur (comptes, mémoire, journal). Résiliez l'abonnement dans la boutique.</p>
+
+<p class="note"><strong>Urgences</strong> : Alphacoeur donne des repères généraux et peut afficher les numéros d'urgence, mais n'appelle personne et ne remplace ni un médecin ni les secours. En cas d'urgence, appelez le 15 ou le 112.</p>
+
+<h2>Aide</h2>
+<p>Questions des utilisateurs : <a href="assistance.html#fr-serveur">Assistance</a>. Données et vie privée : <a href="politique-confidentialite.html#serveur">Politique de confidentialité</a>. Contact : <a href="mailto:barth.contact.alpha@gmail.com">barth.contact.alpha@gmail.com</a>.</p>
+</section>
+
+<hr>
+
+<section id="en" lang="en">
+<p class="lang"><a href="#fr" hreflang="fr" lang="fr">Version française</a> · <a href="./">Home</a></p>
+<h1>Alphacoeur Server: administrator guide</h1>
+<p class="date">Last updated: November 6, 2026</p>
+
+<p>With <strong>Alphacoeur Server</strong>, a Windows PC at the office runs Alphacoeur's brain for the whole team. The team's iPhones, iPads, Macs, Android phones and PCs connect to it over the office Wi‑Fi or network. <strong>Conversations stay on that PC</strong>: nothing goes to the publisher. No IT skills needed: allow about half an hour, mostly for the brain download.</p>
+
+<p>Contents: <a href="#en-requirements">Requirements</a> · <a href="#en-power">More power?</a> · <a href="#en-install">Install</a> · <a href="#en-turn-on">Turn on server mode</a> · <a href="#en-subscribe">Subscribe</a> · <a href="#en-devices">Add devices</a> · <a href="#en-users">Users</a> · <a href="#en-updates">Updates</a> · <a href="#en-troubleshooting">Troubleshooting</a></p>
+
+<h2 id="en-requirements">1. Requirements</h2>
+<ul>
+  <li>A PC running <strong>Windows 10</strong> (version 2004 or later), <strong>Windows 11</strong>, or <strong>Windows Server 2022 / 2025 with Desktop Experience</strong>. 64-bit PC (x64).</li>
+  <li>A PC that stays <strong>on</strong> during working hours, ideally connected to the router with a network cable.</li>
+  <li>At least <strong>10 GB</strong> of free disk space.</li>
+  <li>An Internet connection for installation (brain download) and updates. Conversations themselves do not use the Internet.</li>
+  <li>A Windows administrator account, for the installation.</li>
+</ul>
+<h3 id="en-power">More power?</h3>
+<p>Alphacoeur's brain runs on the device: its size depends on the <strong>device's memory</strong>. The more memory, the bigger the brain, and the richer and more accurate the answers. Alphacoeur picks the best brain that fits on the device on its own.</p>
+<p>For more powerful answers: install Alphacoeur on a <strong>more powerful computer</strong>, at home or at the office, turn on <strong>server mode</strong>, then connect your phones, tablets and computers to it. They then use that computer's big brain, over your local network: <strong>nothing goes to the Internet</strong>.</p>
+<table>
+  <thead><tr><th scope="col">Device memory</th><th scope="col">Brain (model size)</th></tr></thead>
+  <tbody><tr><td>3 GB</td><td>0.6B</td></tr><tr><td>6 GB</td><td>1.7B</td></tr><tr><td>8 GB</td><td>4B</td></tr><tr><td>12 GB or more</td><td>8B</td></tr><tr><td>PC with 16 GB + 12 GB graphics card</td><td>14B</td></tr><tr><td>Server with 64 to 96 GB</td><td>80B</td></tr><tr><td>Server with 256 GB or more</td><td>235B and more</td></tr></tbody>
+</table>
+<p class="note">Indicative guide: the exact choice also depends on the graphics card, free disk space and the brains available in the catalog at installation time.</p>
+<p>To see the PC's memory: Settings › System › About (“Installed RAM”).</p>
+<p class="note">Tip: <strong>16 GB of memory</strong>, and a recent graphics card if the team has more than 5 people. The server answers one person at a time and queues the others for a few seconds.</p>
+
+<h2 id="en-install">2. Install (double-click)</h2>
+<ol>
+  <li>Copy the Alphacoeur installation folder to the PC, then <strong>double-click “Installer-Alphacoeur.cmd”</strong>. (With the Microsoft Store, install Alphacoeur from the Store instead, then run the installer for the server service if one was provided.)</li>
+  <li>Windows asks for permission: answer <strong>Yes</strong>. This is normal; the installer needs it once.</li>
+  <li>“<strong>Will this PC be the team server?</strong>”: <strong>Yes</strong>. The server will start with Windows, even when nobody is signed in, and restart on its own after a failure.</li>
+  <li>“<strong>Allow devices on the local network to reach the server?</strong>”: <strong>Yes</strong>. A single rule is added to Windows Firewall (port 47843, local network only). Nothing is opened to the Internet.</li>
+  <li>Open Alphacoeur: the “<strong>Welcome to the Server edition</strong>” assistant guides you in 4 steps (welcome, subscription, brain, first device). The brain downloads on its own; you can carry on meanwhile.</li>
+</ol>
+
+<h2 id="en-turn-on">2b. Turning on server mode</h2>
+<p><strong>On which devices?</strong> Server mode is available today on <strong>Windows PCs</strong> (Windows 10 version 2004 or later, Windows 11, Windows Server 2022 / 2025 with Desktop Experience). <strong>Mac</strong> with Apple silicon: coming soon, in the same app. <strong>Phones and tablets</strong> (iPhone, iPad, Android) cannot be servers: they connect to a server.</p>
+<p><strong>On the computer that will be the server:</strong></p>
+<ol>
+  <li>Open Alphacoeur › <strong>Settings › Server mode</strong>, then tap <strong>“Turn on server mode”</strong>.</li>
+  <li><strong>Subscription</strong>: pick the tier; payment goes through the store (Microsoft Store on the PC; otherwise “Subscribe from my phone”).</li>
+  <li><strong>Brain download</strong>: the best brain for this computer downloads and installs on its own (size shown first).</li>
+  <li><strong>QR code</strong>: a QR code and a 6-digit code appear to connect the first device.</li>
+</ol>
+<p><strong>On phones, tablets and other computers:</strong> Alphacoeur › <strong>Settings › Connect to a server</strong>, on the same network (Wi‑Fi or cable). Scan the QR code, or type the 6-digit code and check that the fingerprint matches the one on the server. To disconnect: same screen, “Remove this server”; the device then goes back to its own brain.</p>
+<p><strong>Turning server mode off:</strong> on the server, Settings › Server mode › “Turn off server mode”. Connected devices go back to their own brain. Remember to cancel the subscription in the store; to erase everything from the PC (accounts, memory, log): “Installer-Alphacoeur.cmd /desinstaller /tout”.</p>
+
+<h2 id="en-subscribe">3. Subscribe in the app</h2>
+<p>The subscription is taken <strong>only in the app</strong>, through a store (Microsoft Store, App Store or Google Play). There is no bank transfer, no invoice from the publisher and no key to buy elsewhere.</p>
+<table>
+  <thead><tr><th scope="col">Tier</th><th scope="col">Users</th><th scope="col">Also</th></tr></thead>
+  <tbody>
+    <tr><td>Solo server</td><td>1</td><td>—</td></tr>
+    <tr><td>Team</td><td>up to 5</td><td>early-access versions and brains</td></tr>
+    <tr><td>Business</td><td>up to 15</td><td>early access; +5 and +10 user add-ons, combinable</td></tr>
+  </tbody>
+</table>
+<p>The price for your country is shown by the store before you buy.</p>
+<ul>
+  <li><strong>On a PC with the Microsoft Store</strong>: at the subscription step (step 2 of 4), click the tier; the Microsoft Store purchase window opens.</li>
+  <li><strong>On Windows Server (no Microsoft Store)</strong>: click “<strong>Subscribe from my phone</strong>”, scan the code shown with Alphacoeur on your iPhone, iPad, Mac or Android phone, then choose the subscription in Settings › Connect to a server. The server activates on its own.</li>
+  <li>After a purchase made elsewhere, click “<strong>Refresh my purchases</strong>”.</li>
+</ul>
+<p>The subscription renews every month through the store. If the renewal doesn't arrive, the server keeps going for <strong>7 days</strong> with a warning, then devices go back to their own brain. <strong>Cancel, change tier, get a VAT invoice</strong>: in the store where the subscription was taken (Microsoft account, Apple Account or Google Play › Subscriptions).</p>
+
+<h2 id="en-devices">4. Add devices</h2>
+<ol>
+  <li>On the server PC, in Alphacoeur › Settings › Server mode › Users, pick the person (or create them, see below), then <strong>“Add a device”</strong>.</li>
+  <li>A <strong>QR code</strong> and a <strong>6-digit code</strong> appear. They work once, for 10 minutes.</li>
+  <li>On the device (connected to the same network): Alphacoeur › Settings › <strong>Connect to a server</strong>. The server shows up on its own.</li>
+  <li>Scan the QR code, or type the 6-digit code and check that the <strong>fingerprint</strong> shown on the device matches the one on the server PC (“Certificate fingerprint”).</li>
+</ol>
+<p>That's it: the device now uses the server's brain. It reconnects on its own after an outage or an update.</p>
+
+<h2 id="en-users">5. Users</h2>
+<ul>
+  <li><strong>Add a person</strong>: Users › “New person…”, type their first name, then “Show code” to pair their first device. A person can have several devices.</li>
+  <li><strong>Rename</strong> or <strong>Remove</strong> a person: their devices are disconnected and their memory is erased from the server.</li>
+  <li><strong>Lost or replaced device</strong>: “Remove device” on the person's row.</li>
+  <li>The number of people is limited by the tier (“users out of … allowed by the licence”).</li>
+  <li>Each person has their own memory, encrypted on the server, that others can't see. The server log records who connects and when, <strong>never the content of messages</strong>.</li>
+</ul>
+
+<h2 id="en-updates">6. Updates</h2>
+<ul>
+  <li>The server checks for updates a few minutes after starting and then every 6 hours, and installs them <strong>on its own</strong>. Answers in progress finish first; devices wait a few seconds and reconnect on their own.</li>
+  <li>If a new version doesn't start, the server <strong>goes back to the previous one on its own</strong>.</li>
+  <li>Accounts, memory, subscription and pairings are kept: nothing to redo on the devices.</li>
+  <li>Team and Business tiers: “Advanced options › Update channel › Early access” to get versions and brains ahead of time. “Stable” suits most offices.</li>
+  <li>Updates are signed by the publisher; the server refuses any package whose signature doesn't match.</li>
+</ul>
+
+<h2 id="en-troubleshooting">7. Troubleshooting</h2>
+<h3>A device can't find the server</h3>
+<ul>
+  <li>Is the server PC on, and not asleep? (Settings › System › Power: sleep “Never” when plugged in.)</li>
+  <li>Is the device on the <strong>same network</strong> as the server? A “guest” Wi‑Fi isolates devices: it won't work.</li>
+  <li>Use the <strong>QR code</strong> rather than the 6-digit code: it contains the server's address, even when the network blocks automatic discovery.</li>
+  <li>On iPhone, iPad or Mac, allow “Local Network” for Alphacoeur; on Android, “Nearby devices”.</li>
+</ul>
+<h3>Firewall</h3>
+<ul>
+  <li>The installer creates the rule “<strong>Alphacoeur Serveur (réseau local)</strong>”: port <strong>47843</strong> (TCP), local network only. If you answered No, run “Installer-Alphacoeur.cmd” again.</li>
+  <li>In Settings › Network &amp; Internet, the server PC's network must be a <strong>private network</strong>, not public.</li>
+  <li>An antivirus with its own firewall may block the server: allow port 47843 (TCP) for the local network.</li>
+  <li>“The server could not start: its port is already in use”: the service is probably already running; restart the PC.</li>
+</ul>
+<h3>Wi‑Fi</h3>
+<ul>
+  <li>Repeaters and mesh Wi‑Fi are fine, as long as everything is on the same network.</li>
+  <li>If the server's address changes (new router), devices find it again on their own; otherwise, pair again with a new QR code.</li>
+</ul>
+<h3>Using the server away from the office: VPN</h3>
+<p>The server <strong>refuses connections from the Internet</strong>. <strong>Never</strong> open port 47843 on your router: it wouldn't work and would expose the PC. To use it while travelling or working from home, go through a <strong>VPN</strong>:</p>
+<ul>
+  <li><strong>Tailscale</strong> (the simplest): install it on the server and on the devices, with the same account. If Tailscale is running when you show the QR code, the VPN address is included in it.</li>
+  <li><strong>WireGuard</strong> (on the router or an office PC): if its addresses are in another private subnet, add that subnet to the firewall rule “Alphacoeur Serveur (réseau local)”.</li>
+</ul>
+<h3>Slow answers</h3>
+<ul>
+  <li>Several people at once: each waits their turn (“Queue” on the server screen).</li>
+  <li>PC without a graphics card: a smaller or slower brain is picked. More memory or a graphics card allows a better brain.</li>
+</ul>
+<h3>Uninstall</h3>
+<p><code>Installer-Alphacoeur.cmd /desinstaller</code> removes the app and the service; add <code>/tout</code> to also erase the server's data (accounts, memory, log). Cancel the subscription in the store.</p>
+
+<p class="note"><strong>Emergencies</strong>: Alphacoeur gives general pointers and can display emergency numbers, but never calls anyone and does not replace a doctor or emergency services. In an emergency, call your local emergency number (112 in Europe).</p>
+
+<h2>Help</h2>
+<p>User questions: <a href="assistance.html#en-server">Support</a>. Data and privacy: <a href="privacy-policy-en.html#server">Privacy Policy</a>. Contact: <a href="mailto:barth.contact.alpha@gmail.com">barth.contact.alpha@gmail.com</a>.</p>
+</section>
+
+</body>
+</html>

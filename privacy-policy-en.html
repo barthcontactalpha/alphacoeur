@@ -3,88 +3,166 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
 <title>Alphacoeur — Privacy Policy</title>
 <style>
-  body { font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif; max-width: 720px; margin: 0 auto; padding: 32px 16px; color: #1d1d1f; background: #fff; }
-  h1 { font-size: 28px; } h2 { font-size: 20px; margin-top: 28px; }
+  body { font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Roboto, sans-serif; max-width: 720px; margin: 0 auto; padding: 32px 16px; color: #1d1d1f; background: #fff; overflow-wrap: break-word; }
+  h1 { font-size: 28px; } h2 { font-size: 20px; margin-top: 28px; } h3 { font-size: 17px; margin: 18px 0 4px; }
   li { margin: 4px 0; } .date { color: #6e6e73; }
   a { color: #0066cc; } .lang { text-align: right; margin: 0 0 8px; font-size: 15px; }
-  @media (prefers-color-scheme: dark) { body { background: #000; color: #f5f5f7; } .date { color: #a1a1a6; } a { color: #2997ff; } }
+  .note { border-left: 3px solid #d2d2d7; padding: 2px 0 2px 12px; }
+  nav ul { padding-left: 20px; } code { font-size: 14px; }
+  @media (prefers-color-scheme: dark) { body { background: #000; color: #f5f5f7; } .date { color: #a1a1a6; } a { color: #2997ff; } .note { border-color: #424245; } }
 </style>
 </head>
 <body>
-<p class="lang"><a href="politique-confidentialite.html" hreflang="fr" lang="fr">Version française</a></p>
+<p class="lang"><a href="politique-confidentialite.html" hreflang="fr" lang="fr">Version française</a> · <a href="./">Home</a></p>
 <h1>Alphacoeur Privacy Policy</h1>
-<p class="date">Last updated: November 5, 2026</p>
+<p class="date">Last updated: November 6, 2026</p>
 
-<h2>In short</h2>
-<p>Alphacoeur is an assistant that runs on your device (iPhone, iPad or Mac). <strong>We, the publisher of Alphacoeur, collect no data</strong>: no account, no Alphacoeur server, no advertising, no tracking, no usage statistics, no crash reports sent by the app. The only things that reach us are the emails you choose to write to us (see “Reporting an answer”).</p>
+<nav aria-label="Contents">
+<ul>
+  <li><a href="#short">In short</a></li>
+  <li><a href="#device">What stays on your device</a></li>
+  <li><a href="#permissions">Permissions, platform by platform</a></li>
+  <li><a href="#services">Online services</a></li>
+  <li><a href="#subscription">Subscriptions and payment</a></li>
+  <li><a href="#transfers">Transfers between your devices</a></li>
+  <li><a href="#server">Server edition (teams)</a></li>
+  <li><a href="#health">Health and emergencies</a></li>
+  <li><a href="#rights">Your rights</a></li>
+</ul>
+</nav>
+
+<h2 id="short">In short</h2>
+<p>Alphacoeur is an assistant that runs on your device: iPhone, iPad, Mac, Android phone or tablet, Windows PC. <strong>We, the publisher of Alphacoeur, collect no data</strong>: no account, no Alphacoeur server run by the publisher, no advertising, no tracking, no usage statistics, no crash reports sent by the app. The only things that reach us are the emails you choose to write to us (see “Reporting an answer”).</p>
 <p>When an answer needs the Internet, Alphacoeur contacts a public service directly (weather, search…), as described below. That service receives the request, just as if you had typed it into a browser yourself, but no identifier and no personal data coming from Alphacoeur.</p>
+<p>The <strong>Server edition</strong> (for teams) runs on a Windows PC <strong>that belongs to your organization</strong>, on its local network. Conversations and memory handled there stay on that PC: the publisher has no access to them (see <a href="#server">Server edition</a>).</p>
 
 <h2>Who is responsible</h2>
 <p>Publisher: Barth. Contact: <a href="mailto:barth.contact.alpha@gmail.com">barth.contact.alpha@gmail.com</a>.</p>
+<p>For the Server edition, the organization that installs the server is responsible for the data kept on its PC (accounts, memory, log). The publisher does not receive that data and does not process it on the organization's behalf.</p>
 
-<h2>What stays on your device</h2>
+<h2 id="device">What stays on your device</h2>
 <ul>
-  <li>Your notes, shopping list, projects, memory, scenarios, missions, skills, measurements and 3D scans, the action log and your conversations with the local brain.</li>
-  <li>Speech recognition (Alphacoeur requires <em>on-device</em> recognition: your voice is never sent) and the voice that answers you.</li>
+  <li>Your notes, shopping list, projects, memory, scenarios, missions, skills, measurements and 3D scans, the action log and conversations with the local brain.</li>
+  <li>Speech recognition and the voice that answers you (details per platform under <a href="#permissions">Permissions</a>).</li>
   <li>The AI brain, once downloaded: it runs entirely on the device.</li>
-  <li>The index of your photos and of the file folder you choose, if you turn it on. It is built on the device; card numbers, IBANs and codes are not copied into it. Photos and files kept only in iCloud are not downloaded.</li>
+  <li>The index of your photos and of the file folder you choose, if you turn it on (iPhone, iPad, Mac). It is built on the device; card numbers, IBANs and codes are not copied into it. Photos and files that are only in iCloud are not downloaded.</li>
   <li>Your calendar and contacts: read on the device, only when you ask. Your calendar is never sent, neither to a search engine nor to an online AI.</li>
-  <li>The online AI keys you enter: stored in the device keychain, never backed up or transferred.</li>
+  <li>Online AI keys you enter: stored in the device's secure store (Apple Keychain, or the system's protected storage), never backed up or transferred.</li>
 </ul>
-<p>Alphacoeur's main files are protected by the system's encryption (iOS / iPadOS, or FileVault on Mac) while the device is locked. Everything can be erased from Alphacoeur's Settings or by deleting the app.</p>
-<p><strong>Device backups</strong>: as with any app, Alphacoeur's data is part of your device's iCloud or computer backup if you have turned it on (the AI brain is excluded). These backups are managed by Apple or by your computer, not by Alphacoeur.</p>
-<p><strong>Alphacoeur backup</strong>: if you create a backup from Alphacoeur's Settings, it is a file encrypted with your password (AES-256), which you save wherever you like. Alphacoeur sends it nowhere. Without your password, no one can read it, not even Alphacoeur.</p>
-
-<h2>Permissions</h2>
-<p>Microphone, speech recognition, photos, calendar, contacts, camera (measure and 3D scan), local network, notifications and alarms are used only when you ask for the matching feature. You can withdraw them at any time in the device's Settings.</p>
+<h3>File protection</h3>
 <ul>
+  <li><strong>iPhone, iPad</strong>: system encryption while the device is locked. <strong>Mac</strong>: app sandbox, and FileVault if you turned it on.</li>
+  <li><strong>Android</strong>: the app's private storage, which other apps cannot read, encrypted by Android. Google backup of Alphacoeur's data is <strong>turned off</strong>: nothing goes to your Google account.</li>
+  <li><strong>Windows</strong>: app data encrypted for your Windows session (Windows Data Protection, DPAPI).</li>
+</ul>
+<p>Everything can be erased from Alphacoeur's Settings or by uninstalling the app.</p>
+<p><strong>Device backups (iPhone, iPad, Mac)</strong>: as with any app, Alphacoeur's data is part of your device's iCloud or computer backup if you have turned it on (the AI brain is excluded). These backups are managed by Apple or by your computer, not by Alphacoeur.</p>
+<p><strong>Alphacoeur backup</strong>: if you create a backup from Alphacoeur's Settings, it is a file encrypted with your password (AES-256), which you save wherever you like. Alphacoeur sends it nowhere. Without your password, nobody can read it, not even Alphacoeur.</p>
+
+<h2 id="permissions">Permissions, platform by platform</h2>
+<p>Each permission is used only when you ask for the matching feature. If you deny it, the rest of the app keeps working. You can revoke it at any time in the system settings.</p>
+
+<h3>iPhone, iPad and Mac</h3>
+<p>Microphone, speech recognition, photos, calendar, contacts, camera (measure and 3D scan), local network, notifications and alarms.</p>
+<ul>
+  <li><strong>Speech recognition</strong>: Alphacoeur requires <em>on-device</em> recognition; your voice is never sent.</li>
   <li><strong>Wake word</strong> (off by default): if you turn it on, the microphone also listens while Alphacoeur is on screen, to recognize “Alpha”. Everything happens on the device, nothing is recorded, and the microphone closes as soon as Alphacoeur goes to the background.</li>
-  <li><strong>Notifications, reminders and alarms</strong>: scheduled on the device (local notifications and, on recent iPhones and iPads, system alarms). No notification comes from a server.</li>
-  <li><strong>Camera and LiDAR</strong>: only in “Measure &amp; 3D scan”; images and scans stay on the device.</li>
-  <li><strong>Photos</strong>: read-only, analyzed on the device; Alphacoeur never modifies or deletes any photo.</li>
-  <li><strong>Messages and emails</strong>: Alphacoeur prepares a draft; it is sent only if you confirm sending, in Messages or Mail.</li>
+  <li><strong>Notifications, reminders and alarms</strong>: scheduled on the device (local notifications and, on recent iPhone and iPad, system alarms). No notification comes from a server.</li>
+  <li><strong>Camera and LiDAR</strong>: only in “Measure &amp; 3D scan” (iPhone Pro and iPad Pro); images and scans stay on the device.</li>
+  <li><strong>Photos</strong>: read-only, analyzed on the device; Alphacoeur never modifies or deletes a photo.</li>
+  <li><strong>Local network</strong>: transfers between your devices, and connection to your team's server if you use one.</li>
+  <li><strong>Messages and mail</strong>: Alphacoeur prepares a draft; it is only sent if you confirm, in Messages or Mail.</li>
   <li><strong>Clipboard</strong>: read only when you ask to use the copied text or link.</li>
 </ul>
 
-<h2>Online services</h2>
-<p>When an answer needs the Internet, Alphacoeur queries the relevant service directly, with no identifier and no personal data, sending only what is needed (for example the name of a city). As with any Internet connection, these services see your connection's IP address. Each one applies its own privacy policy.</p>
+<h3>Android</h3>
 <ul>
-  <li>places and time zones: Apple geocoding (the city name; the city you set is kept on the device after the first time);</li>
-  <li>weather: MET Norway, the Norwegian Meteorological Institute (api.met.no), which only receives the city's position rounded to about 1 km; sunrise and sunset are calculated on the device, without the network;</li>
+  <li><strong>Microphone</strong>: only when you tap the logo or the microphone button. Alphacoeur uses Android's <em>on-device</em> speech recognition (Android 12 or later). If it is not available, the microphone stays closed, unless you yourself turn on “System recognition” in Alphacoeur's Settings: your phone's speech recognition (Google or the manufacturer) is then used, asking it to stay offline; this is not a guarantee, and that service applies its own policy.</li>
+  <li><strong>Notifications</strong>: for reminders and finished timers, scheduled on the phone. No notification comes from a server.</li>
+  <li><strong>Exact alarms</strong>: so that a reminder or alarm rings at the exact time. Alarms and timers can also be handed to the phone's Clock app, after you confirm.</li>
+  <li><strong>Camera</strong>: only to scan your team server's QR code. The image is read on the phone and is neither kept nor sent.</li>
+  <li><strong>Nearby devices / local network</strong>: only to find your team's server (or your other devices) on your Wi‑Fi. Alphacoeur does not use it to locate you.</li>
+  <li><strong>Internet</strong>: for the services listed below (brain, weather, Wikipedia…), never for advertising or statistics.</li>
+  <li>The voice that answers you: Android's text-to-speech installed on the phone.</li>
+</ul>
+
+<h3>Windows</h3>
+<ul>
+  <li><strong>Microphone</strong>: only when you ask. Offline, Windows speech recognition understands commands and the main emergency phrases. Windows <strong>free dictation</strong> goes through an online Microsoft service: Alphacoeur only uses it if you turn it on in its Settings, and that service applies Microsoft's policy.</li>
+  <li><strong>Internet</strong> (<code>internetClient</code>): brain download, the services listed below, updates and the signed catalog.</li>
+  <li><strong>Local network</strong>: only for the Server edition (receiving your team's devices) or to connect to it.</li>
+  <li>The voice that answers you: the Windows voices installed on the PC.</li>
+</ul>
+
+<h2 id="services">Online services</h2>
+<p>When an answer needs the Internet, Alphacoeur queries the relevant service directly, without any identifier or personal data, sending only what is necessary (for example the name of a city). As with any Internet connection, these services see your connection's IP address. Each applies its own privacy policy. In the app, the “What leaves the device” screen gives the exact list for your version.</p>
+<ul>
+  <li>places and time zones: the city name only (on iPhone, iPad and Mac, Apple geocoding); the city you set is kept on the device after the first time;</li>
+  <li>weather: MET Norway, the Norwegian Meteorological Institute (api.met.no), which only receives the city's position rounded to about 1 km; sunrise and sunset are calculated on the device, without network;</li>
   <li>exchange rates: Frankfurter, based on the European Central Bank (the codes of the two currencies, never the amount);</li>
   <li>searches: Wikipedia (the search words, cleaned of anything about you). Alphacoeur then opens a few Wikipedia articles to read the answer; no other site is opened;</li>
-  <li>images: Wikimedia Commons (the search words); only free images are shown, with their author and license;</li>
+  <li>images: Wikimedia Commons (the search words); only free-licensed images are shown, with their author and license;</li>
   <li>summary of a link you provide: the page is opened from your device and summarized on the device;</li>
-  <li>links you tap in Alphacoeur (sources, requested sites): they open in Safari, outside Alphacoeur, and the site sees your visit like any other visit in Safari;</li>
-  <li>AI brain download: Hugging Face (only when you start the installation, over Wi‑Fi);</li>
-  <li>directions: Apple Maps (only if you open the link);</li>
-  <li>connection test: an Apple test page, only when you ask for the device status.</li>
+  <li>links you tap in Alphacoeur (sources, requested sites): they open in your browser (Safari, Chrome, Edge…), outside Alphacoeur, and the site sees your visit like any other visit;</li>
+  <li>AI brain download: Hugging Face (huggingface.co), only when you start the installation (over Wi‑Fi on phones and tablets). Only the model's public file is requested; each file is checked against its fingerprint;</li>
+  <li>brain catalog and updates (Android, Windows and server): a <strong>signed</strong> file read at most once a day from the publisher's website, hosted by GitHub Pages (barthcontactalpha.github.io), and, for Windows, update packages hosted by GitHub. Nothing is sent: no identifier, nothing about your data; GitHub sees the IP address, as with any web page. On iPhone, iPad and Mac, updates come through the App Store;</li>
+  <li>directions: Apple Maps on iPhone, iPad and Mac, or the system's maps app (only if you open the link);</li>
+  <li>connection test: an Apple test page, only when you ask for the device status (iPhone, iPad, Mac).</li>
 </ul>
 <p><strong>What is sent without you saying “Search”</strong>:</p>
 <ul>
   <li>factual questions (“What is…”, “How many…”) may be checked automatically on the web. This setting, “Check questions on the web” (on by default), can be turned off in Alphacoeur's Settings;</li>
-  <li>scenarios with a weather condition query the weather (Apple geocoding, then MET Norway) when they run;</li>
-  <li>requests made without a network are kept on the device, then sent in the same way when the connection comes back.</li>
+  <li>scenarios with a weather condition query the weather when they run;</li>
+  <li>the daily check of the signed catalog and of updates (Android, Windows, server);</li>
+  <li>requests made without a network are kept on the device, then sent the same way when the connection comes back.</li>
 </ul>
-<p><strong>What is never sent on its own</strong>: a sentence about you or your loved ones (“my daughter has a fever”, an address, a code…) is never sent automatically. And even when you say “Search…”, Alphacoeur removes from the search family relationships, people's first and last names, addresses and possessives (“the treatment of my mother Josiane's cancer” becomes “the treatment of cancer”).</p>
-<p><strong>Online AI (optional)</strong>: if you enter your own Claude (Anthropic), ChatGPT (OpenAI) or Gemini (Google) key, the question concerned is sent directly to that provider, with your key, and handled under its own terms. Alphacoeur asks for your consent before saving the key. Your loved ones' names, your address and numbers (phone, email, IBAN, card) are removed from the question or block the sending. This only happens if you ask for it (“ask Claude…”) or if you turn on “Automatically send difficult questions” (off by default; a sentence about you is then never sent). Neither your memory nor your notes, calendar, photos or files are sent. Without a key, Alphacoeur may show an “Go deeper on ChatGPT” or “Open Claude” link: the question is only sent if you tap it (this link can be turned off in Settings).</p>
+<p><strong>What is never sent on its own</strong>: a sentence about you or your loved ones (“my daughter has a fever”, an address, a code…) is never sent automatically. And even when you say “Search…”, Alphacoeur removes family relationships, first and last names of people, addresses and possessives from the search (“treatment for my mother Josiane's cancer” becomes “cancer treatment”).</p>
+<p><strong>Online AI (optional)</strong>: if you enter your own Claude (Anthropic), ChatGPT (OpenAI) or Gemini (Google) key, the relevant question is sent directly to that provider, with your key, and handled under its own terms. Alphacoeur asks for your consent before saving the key. The names of your loved ones, your address and numbers (phone, email, IBAN, card) are removed from the question or block sending. This only happens if you ask for it (“ask Claude…”) or if you turn on “Automatically send difficult questions” (off by default; a sentence about you is then never sent). Neither your memory, nor your notes, calendar, photos or files are sent. Without a key, Alphacoeur may show a link “Go deeper on ChatGPT” or “Open Claude”: the question is only sent if you tap it (this link can be turned off in Settings).</p>
 <p><strong>Siri</strong>: if you go through “Hey Siri, ask Alphacoeur”, the request is first handled by Siri, under Apple's policy.</p>
-<p><strong>Reporting an answer</strong>: on an answer written by an AI, “Report this answer” prepares an email addressed to the publisher, containing only your question, the answer, its origin (local brain or online AI) and the app version. Nothing is sent automatically: you review the email and decide whether to send it from your mail app. If you send it, the publisher receives this email and your email address, used only to handle the report and reply to you, then deleted.</p>
+<p><strong>Reporting an answer</strong>: on an answer written by an AI, “Report this answer” prepares an email to the publisher containing only your question, the answer, its origin (local brain, team server or online AI) and the app version. Nothing is sent automatically: you review the email and decide whether to send it from your mail app. If you send it, the publisher receives that email and your email address, used only to handle the report and reply to you, then deleted.</p>
 
-<h2>Subscription and payment</h2>
-<p>Alphacoeur is free to download; the optional “Alphacoeur Premium” subscription is purchased in the app with your Apple Account. <strong>Payment is handled entirely by Apple</strong>: we receive no payment data (no bank card, name, address or Apple ID). Apple processes the purchase under its own privacy policy.</p>
-<p>Alphacoeur checks the subscription on your device, in receipts signed by Apple, without any Alphacoeur server: nothing is sent to the publisher. You manage and cancel the subscription in your Apple Account settings. Emergency, health and privacy features (erasure, privacy settings, backup and restore) always remain free.</p>
+<h2 id="subscription">Subscriptions and payment</h2>
+<p>Alphacoeur is free to download; the optional “Alphacoeur Premium” subscription and the Server edition subscriptions are bought in the app, through your device's store: the <strong>App Store</strong> (iPhone, iPad, Mac), <strong>Google Play</strong> (Android) or the <strong>Microsoft Store</strong> (Windows). <strong>Payment is handled entirely by the store</strong>: we receive no payment data (no card, no name, no address, no account identifier). The store processes the purchase under its own privacy policy, and it is the store that sends the receipt or invoice.</p>
+<p>Alphacoeur checks the subscription on your device, using the purchase proofs provided by the store, without any server run by the publisher: nothing is sent to the publisher. For a Server edition subscription, the store's purchase proof is sent <strong>only to your team's server</strong>, on your local network, which checks it itself, without contacting the store or the publisher.</p>
+<p>You manage and cancel a subscription in your store account (Apple Account, Google Play › Subscriptions, or Microsoft account). Emergency, health and privacy features (erasing, privacy settings, backup and restore) are always free.</p>
 
-<h2>Transfers between your devices</h2>
-<p>Files exchanged between your Alphacoeur devices go directly from one to the other, on the same Wi‑Fi network, end-to-end encrypted, with no online service, and only while the Transfers screen is open. A device is only authorized after comparing a 6-digit code. Your memory is only shared with a device you have authorized for it, when you start the synchronization.</p>
+<h2 id="transfers">Transfers between your devices</h2>
+<p>Files exchanged between your Alphacoeur devices go directly from one to the other, on the same Wi‑Fi network, end-to-end encrypted, without any online service, and only while the Transfers screen is open. A device is only authorized after comparing a 6-digit code. Your memory is only shared with a device you have authorized for it, when you start synchronization.</p>
 
-<h2>Health and emergencies</h2>
-<p>Alphacoeur can give general health pointers and display emergency numbers (15, 112, 114, 3114, 3919, 119…). These numbers are simply displayed or read aloud: Alphacoeur calls no one and sends nothing to these services. Your health questions are handled on the device and are never sent to the Internet on their own. <strong>Alphacoeur does not replace a doctor, a pharmacist or emergency services.</strong></p>
+<h2 id="server">Server edition (teams)</h2>
+<p>With the Server edition, a Windows PC of your organization runs Alphacoeur's brain for the team; the team's devices connect to it on the local network. <strong>This PC belongs to your organization, not to the publisher.</strong></p>
+<h3>What is kept on the server</h3>
+<ul>
+  <li>Users (the name chosen by the administrator), their paired devices and a fingerprint of their connection tokens (never the token itself).</li>
+  <li>Each user's memory (their last 200 messages), <strong>encrypted on the server</strong> (Windows Data Protection) and kept separate from other users. Each user can erase it from their device; the administrator can delete a user and all their data.</li>
+  <li>Proofs of purchase for Server subscriptions, checked on site.</li>
+  <li>An <strong>audit log without content</strong>: who paired or was refused, from which local network address, how many messages and when. It <strong>never</strong> contains message text or tokens. It is kept for 12 months on the server, then deleted.</li>
+  <li>The server's certificate and settings.</li>
+</ul>
+<p>Everything is stored in the PC's <code>%ProgramData%\Alphacoeur\Serveur</code> folder. Conversations do not leave your organization's network; the publisher has no access to them, neither remotely nor through updates. Uninstalling with the “erase everything” option deletes this data.</p>
+<h3>Network</h3>
+<ul>
+  <li>The server listens over HTTPS on <strong>port 47843</strong> (TCP), with the server's own certificate, whose fingerprint is checked by each device (in the QR code, or compared on screen with the 6-digit code).</li>
+  <li>It <strong>refuses public addresses</strong>: only the local network and private VPNs (for example Tailscale, WireGuard) are accepted. The installer only adds a firewall rule limited to the local network, with your consent. Nothing is opened to the Internet.</li>
+  <li>It announces itself on the local network (Bonjour / mDNS) with its name (for example “Alphacoeur PCNAME”) so that devices can find it.</li>
+</ul>
+<h3>What the server requests from the Internet</h3>
+<ul>
+  <li>the AI brain download from Hugging Face;</li>
+  <li>the signed brain catalog and signed update announcements, from the publisher's website (GitHub Pages), then the update package hosted by GitHub, if automatic updates are on.</li>
+</ul>
+<p>No conversation, no user name, no statistics are sent. The server contacts neither the publisher nor the stores.</p>
+<h3>On the team's devices</h3>
+<p>A device connected to the server sends its questions to it instead of handling them with its own brain, encrypted, over the local network. Emergencies and distress are recognized first, before any answer from the brain. Online services (weather, Wikipedia…) are still called as described above. To disconnect, the user removes the server in the app's Settings; the administrator can also remove a device.</p>
 
-<h2>Your rights</h2>
-<p>Since we receive no data, there is nothing for us to access, correct or erase on our side: you stay in control of everything, from Alphacoeur (view, export, erase) or by deleting the app. For data sent to an online service listed above, contact that service. You may also lodge a complaint with the CNIL, the French data protection authority (www.cnil.fr).</p>
+<h2 id="health">Health and emergencies</h2>
+<p>Alphacoeur can give general health information and display emergency numbers (15, 112, 114, 3114, 3919, 119 in France; your country's number when you describe an emergency in your language). These numbers are simply displayed or read: Alphacoeur never calls anyone and sends nothing to these services. Your health questions are handled on the device (or on your team's server) and are never sent to the Internet on their own. <strong>Alphacoeur does not replace a doctor, a pharmacist or emergency services.</strong></p>
+
+<h2 id="rights">Your rights</h2>
+<p>Since we receive no data, we have nothing to access, correct or erase on our side: you stay in control of everything, from Alphacoeur (view, export, erase) or by uninstalling the app. For data kept by your team's server, contact your organization's administrator. For data sent to an online service listed above, contact that service. You may also lodge a complaint with your data protection authority (in France, the CNIL, www.cnil.fr).</p>
 
 <h2>Children</h2>
 <p>Alphacoeur collects no data, including from children.</p>
@@ -93,6 +171,6 @@
 <p>If this policy changes, the date at the top of this page is updated.</p>
 
 <h2>Contact</h2>
-<p>For any question: <a href="mailto:barth.contact.alpha@gmail.com">barth.contact.alpha@gmail.com</a>.</p>
+<p>For any question: <a href="mailto:barth.contact.alpha@gmail.com">barth.contact.alpha@gmail.com</a>. Help: <a href="assistance.html#en">Support</a>.</p>
 </body>
 </html>

@@ -3,26 +3,30 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
 <title>Alphacoeur — Assistance / Support</title>
 <style>
-  body { font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif; max-width: 720px; margin: 0 auto; padding: 32px 16px; color: #1d1d1f; background: #fff; }
+  body { font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Roboto, sans-serif; max-width: 720px; margin: 0 auto; padding: 32px 16px; color: #1d1d1f; background: #fff; overflow-wrap: break-word; }
   h1 { font-size: 28px; } h2 { font-size: 20px; margin-top: 28px; } h3 { font-size: 17px; margin: 18px 0 4px; }
   li { margin: 4px 0; } .date { color: #6e6e73; }
   a { color: #0066cc; } .lang { text-align: right; margin: 0 0 8px; font-size: 15px; }
   .note { border-left: 3px solid #d2d2d7; padding: 2px 0 2px 12px; }
+  table { border-collapse: collapse; width: 100%; font-size: 15px; margin: 8px 0; }
+  th, td { text-align: left; vertical-align: top; padding: 6px 8px; border-bottom: 1px solid #d2d2d7; }
   hr { border: 0; border-top: 1px solid #d2d2d7; margin: 48px 0 24px; }
-  @media (prefers-color-scheme: dark) { body { background: #000; color: #f5f5f7; } .date { color: #a1a1a6; } a { color: #2997ff; } .note, hr { border-color: #424245; } }
+  @media (prefers-color-scheme: dark) { body { background: #000; color: #f5f5f7; } .date { color: #a1a1a6; } a { color: #2997ff; } .note, hr, th, td { border-color: #424245; } }
 </style>
 </head>
 <body>
 
 <section id="fr" lang="fr">
-<p class="lang"><a href="#en" hreflang="en" lang="en">English version</a></p>
+<p class="lang"><a href="#en" hreflang="en" lang="en">English version</a> · <a href="./">Accueil</a></p>
 <h1>Assistance Alphacoeur</h1>
-<p class="date">Dernière mise à jour : 5 novembre 2026</p>
+<p class="date">Dernière mise à jour : 6 novembre 2026</p>
+<p>Aller à : <a href="#fr-installer">Installer</a> · <a href="#fr-abonnement">Abonnement</a> · <a href="#fr-serveur">Se connecter à un serveur</a> · <a href="#fr-activer">Activer le mode serveur</a> · <a href="#fr-maj">Mises à jour</a> · <a href="#fr-effacer">Effacer mes données</a> · <a href="#fr-urgences">Urgences</a> · <a href="#fr-puissance">Plus de puissance ?</a> · <a href="#fr-faq">Questions fréquentes</a></p>
 
 <h2>Qu'est-ce qu'Alphacoeur ?</h2>
-<p>Alphacoeur est un assistant vocal privé pour iPhone et iPad (iOS 18 ou plus récent). Son cerveau d'IA tourne sur l'appareil : notes, liste de courses, mémoire, minuteurs, alarmes, rappels, calculs, recettes et conversation fonctionnent même hors ligne, une fois le cerveau téléchargé. Pas de compte, pas de publicité, pas de pistage : vos données restent sur votre appareil.</p>
+<p>Alphacoeur est un assistant vocal privé pour iPhone, iPad, Mac, Android et Windows. Son cerveau d'IA tourne sur l'appareil : notes, liste de courses, mémoire, minuteurs, alarmes, rappels, calculs, recettes et conversation fonctionnent même hors ligne, une fois le cerveau téléchargé. Pas de compte, pas de publicité, pas de pistage : vos données restent sur votre appareil.</p>
 
 <h2>Bien démarrer</h2>
 <ul>
@@ -32,12 +36,21 @@
   <li><strong>Mot d'activation « Alpha »</strong> (abonnement, désactivé par défaut) : à activer dans Réglages › Écoute › Mot d'activation « Alpha ». Dites ensuite « Alpha, quelle heure est-il ? » sans toucher l'écran. Il n'écoute que lorsqu'Alphacoeur est à l'écran, jamais en arrière-plan, tout est reconnu sur l'appareil et rien n'est enregistré.</li>
   <li><strong>Siri</strong> : « Dis Siri, demander à Alphacoeur » lui transmet votre demande.</li>
 </ul>
-<p>Les Réglages s'ouvrent avec la roue dentée en haut à droite de l'accueil.</p>
+<p>Les Réglages s'ouvrent avec la roue dentée en haut à droite de l'accueil. Le mot d'activation et Siri décrits ici concernent iPhone, iPad et Mac ; sur Android et Windows, touchez le logo ou écrivez.</p>
+
+<h2 id="fr-installer">Installer Alphacoeur</h2>
+<ul>
+  <li><strong>iPhone et iPad</strong> : sur l'App Store (iOS / iPadOS 18 ou plus récent).</li>
+  <li><strong>Mac</strong> : sur le Mac App Store (Mac avec puce Apple, macOS 15 ou plus récent).</li>
+  <li><strong>Android</strong> : sur Google Play (bientôt disponible), Android 8.0 ou plus récent. La reconnaissance vocale sur l'appareil demande Android 12 ou plus récent ; avant, écrivez à Alphacoeur.</li>
+  <li><strong>Windows</strong> : sur le Microsoft Store (bientôt disponible), ou avec l'installateur fourni aux entreprises : double-cliquez sur « Installer-Alphacoeur.cmd » et répondez « Oui » à Windows. Windows 10 (version 2004) ou plus récent, Windows 11, Windows Server 2022 / 2025 avec l'expérience utilisateur ; PC x64.</li>
+</ul>
+<p>Au premier lancement, Alphacoeur propose de télécharger le cerveau d'IA adapté à l'appareil ; sa taille est affichée avant de commencer. Sans cerveau, les commandes fonctionnent déjà.</p>
 
 <h2>Langues</h2>
 <p>Dans cette version, les commandes (minuteurs, rappels, notes, calculs…), dites ou écrites, sont comprises <strong>en français</strong>. La conversation libre suit votre langue. L'interface est traduite en 18 langues : français, anglais, allemand, espagnol, italien, portugais (Brésil), japonais, chinois simplifié et traditionnel, néerlandais, polonais, russe, ukrainien, turc, coréen, arabe, hindi et suédois. Les réponses de santé et d'urgence sont en français, avec les numéros français.</p>
 
-<h2>Version gratuite et abonnement</h2>
+<h2 id="fr-abonnement">Version gratuite et abonnement</h2>
 <p>Alphacoeur est gratuit au téléchargement. La version gratuite comprend les commandes de base sans limite (heure, météo, minuteurs, alarmes, rappels, notes, liste de courses, calculs, recettes…), 10 réponses libres du cerveau par jour, avec le plus petit cerveau.</p>
 <p><strong>Alphacoeur Premium</strong> (4,99 € par mois en France ; le prix local est affiché dans l'app) déverrouille toute l'app : le meilleur cerveau pour votre appareil, la conversation sans limite, la mesure et le scan 3D, les documents, la recherche dans les photos et fichiers, les transferts entre appareils, les missions, scénarios, compétences et projets, la recherche approfondie, l'IA en ligne avec votre clé, le mot d'activation et la conversation mains libres. Un essai gratuit de 7 jours s'affiche si votre compte y a droit.</p>
 <p class="note"><strong>Les urgences, la santé et la vie privée restent toujours gratuites</strong> : numéros d'urgence, repères de santé, effacement de vos données, réglages de confidentialité, sauvegarde et restauration.</p>
@@ -47,20 +60,32 @@
   <li><strong>Restaurer mes achats</strong> (nouvel appareil, app réinstallée) : Réglages › Abonnement, puis « Restaurer mes achats », avec le même compte Apple.</li>
   <li><strong>Remboursement</strong> : il est géré par Apple, sur reportaproblem.apple.com.</li>
 </ul>
+<p>Ces chemins concernent iPhone et iPad. Sur les autres appareils, l'abonnement se gère dans la boutique où il a été acheté :</p>
+<ul>
+  <li><strong>Mac</strong> : App Store › votre nom (en bas à gauche) › Réglages du compte › Abonnements › Gérer.</li>
+  <li><strong>Android (Google Play)</strong> : app Play Store › votre photo de profil › Paiements et abonnements › Abonnements › Alphacoeur. Les achats reviennent tout seuls avec le même compte Google ; le remboursement se demande à Google Play, depuis l'historique des commandes de votre compte.</li>
+  <li><strong>Windows (Microsoft Store)</strong> : account.microsoft.com › Services et abonnements › Alphacoeur › Gérer. Les achats reviennent avec le même compte Microsoft ; le remboursement se demande au support de Microsoft.</li>
+</ul>
+<p>L'éditeur ne voit ni ne gère aucun paiement : il ne peut ni résilier ni rembourser à votre place. <strong>Factures</strong> (entreprises) : elles sont émises par la boutique (Apple, Google ou Microsoft), depuis votre compte ou le reçu reçu par e-mail.</p>
 
 <h2>Vie privée en bref</h2>
 <p>Pas de compte, pas de serveur Alphacoeur, pas de publicité ni de pistage : l'éditeur ne reçoit aucune donnée. Votre voix est reconnue sur l'appareil et n'est jamais envoyée. Quand une réponse demande Internet (météo, Wikipédia, devises), seule la demande nécessaire part vers le service public concerné, nettoyée de ce qui parle de vous. Votre agenda ne quitte jamais l'appareil. Pour voir exactement ce qui part : Fonctions › Réglages et contrôle › Ce qui sort de l'appareil.</p>
 <p>Tous les détails : <a href="politique-confidentialite.html">Politique de confidentialité</a>.</p>
 
-<h2>Effacer toutes vos données</h2>
+<h2 id="fr-effacer">Effacer toutes vos données</h2>
 <p>Réglages (roue dentée) › rubrique « Effacer » › « Effacer toutes mes données », puis confirmez avec « Effacer ». Notes, mémoire, listes, scénarios, missions, compétences, appareils autorisés, fichiers reçus, clés d'IA en ligne, mesures, journal et réglages sont effacés ; seuls les cerveaux téléchargés restent (ils se suppriment dans Fonctions › Réglages et contrôle › Modèles IA). C'est définitif, sauf si vous avez fait une sauvegarde. Supprimer l'app efface aussi tout.</p>
 <p>La même rubrique permet d'effacer seulement la conversation, l'analyse des photos, le dossier de fichiers, le journal des actions ou les réglages.</p>
+<ul>
+  <li><strong>Android</strong> : même rubrique dans les Réglages d'Alphacoeur, ou Paramètres du téléphone › Applications › Alphacoeur › Stockage › Effacer les données. Désinstaller l'app efface tout (la sauvegarde Google des données d'Alphacoeur est désactivée).</li>
+  <li><strong>Windows</strong> : même rubrique dans les Réglages d'Alphacoeur, ou Paramètres de Windows › Applications › Applications installées › Alphacoeur › Options avancées › Réinitialiser. Désinstaller l'app efface tout.</li>
+  <li><strong>Serveur de l'équipe</strong> : votre mémoire sur le serveur s'efface depuis votre appareil, dans Réglages › Se connecter à un serveur. L'administrateur peut aussi supprimer votre compte et toutes ses données. Pour retirer le serveur lui-même et ses données : « Installer-Alphacoeur.cmd /desinstaller /tout » sur le PC serveur.</li>
+</ul>
 
 <h2>Signaler une réponse</h2>
 <p>Les réponses écrites par une IA (cerveau local ou IA en ligne) peuvent être fausses. Faites un appui long sur la réponse, puis choisissez « Signaler cette réponse ». Un courriel se prépare avec seulement votre question, la réponse, son origine et la version de l'app. Rien ne part automatiquement : vous le relisez et décidez de l'envoyer.</p>
 
-<h2>Santé et urgences</h2>
-<p class="note"><strong>Alphacoeur n'est pas un médecin.</strong> Il donne des repères généraux et ne remplace pas un médecin, un pharmacien ou les secours. <strong>En cas d'urgence, appelez le 15 (SAMU) ou le 112.</strong> Alphacoeur affiche ou lit les numéros d'urgence, mais n'appelle personne.</p>
+<h2 id="fr-urgences">Santé et urgences</h2>
+<p class="note"><strong>Alphacoeur n'est pas un médecin.</strong> Il donne des repères généraux et ne remplace pas un médecin, un pharmacien ou les secours. <strong>En cas d'urgence, appelez le 15 (SAMU) ou le 112.</strong> Alphacoeur affiche ou lit les numéros d'urgence, mais n'appelle personne. C'est vrai sur toutes les plateformes, et aussi avec le serveur de l'équipe : ne comptez jamais sur Alphacoeur (ni sur le réseau du bureau) pour alerter les secours.</p>
 
 <h2>Appareils</h2>
 <ul>
@@ -68,9 +93,44 @@
   <li><strong>Mesure et scan 3D</strong> : seulement sur les iPhone Pro et iPad Pro équipés du capteur LiDAR. Sur les autres appareils, cette fonction n'apparaît pas.</li>
   <li>Alarmes qui sonnent comme celles de l'app Horloge : à partir d'iOS 26.1 ; avant, ce sont des notifications.</li>
   <li>Transferts entre appareils : deux appareils avec Alphacoeur, sur le même Wi‑Fi, appairés par un code à 6 chiffres.</li>
+  <li><strong>Android</strong> : Android 8.0 ou plus récent ; 6 Go de mémoire ou plus conseillés pour un cerveau local confortable.</li>
+  <li><strong>Windows</strong> : Windows 10 (version 2004) ou plus récent, PC x64 ; 8 Go de mémoire ou plus conseillés.</li>
+  <li>Mesure et scan 3D, recherche dans les photos : iPhone, iPad et Mac seulement.</li>
 </ul>
 
-<h2>Questions fréquentes</h2>
+<h2 id="fr-serveur">Se connecter au serveur de l'équipe</h2>
+<p>Si votre organisation a installé <strong>Alphacoeur Serveur</strong> sur un PC du bureau, vos appareils peuvent utiliser son cerveau, plus puissant, sans que vos conversations quittent le réseau du bureau. Guide de l'administrateur : <a href="serveur.html">installer le serveur</a>.</p>
+<ol>
+  <li>Demandez à l'administrateur d'afficher « Ajouter un appareil » sur le PC serveur : un QR code et un code à 6 chiffres apparaissent (valables 10 minutes).</li>
+  <li>Sur votre appareil, connecté au Wi‑Fi du bureau : Réglages d'Alphacoeur › Se connecter à un serveur.</li>
+  <li>Scannez le QR code (autorisez la caméra), ou tapez le code à 6 chiffres puis vérifiez que l'empreinte affichée est la même que sur le PC serveur.</li>
+  <li>C'est prêt : vos questions partent vers le serveur. Hors du bureau, l'app revient à son propre cerveau, sauf si votre organisation a mis en place un VPN.</li>
+</ol>
+<p>Si l'appareil ne trouve pas le serveur : vérifiez que vous êtes sur le même Wi‑Fi (pas un réseau « invités »), que le PC serveur est allumé, puis réessayez. Autorisez « Réseau local » (iPhone, iPad, Mac) ou « Appareils à proximité » (Android) si l'app le demande. Pour vous déconnecter : Réglages › Se connecter à un serveur › Retirer ce serveur.</p>
+
+<h2 id="fr-activer">Activer le mode serveur</h2>
+<p><strong>Sur quels appareils ?</strong> Le mode serveur existe aujourd'hui sur les <strong>PC Windows</strong> (Windows 10 version 2004 ou plus récent, Windows 11, Windows Server 2022 / 2025 avec l'expérience utilisateur). <strong>Mac</strong> avec puce Apple : bientôt, dans la même app. Les <strong>téléphones et tablettes</strong> (iPhone, iPad, Android) ne peuvent pas être serveurs : ils se connectent à un serveur.</p>
+<p><strong>Sur l'ordinateur qui sera le serveur :</strong></p>
+<ol>
+  <li>Ouvrez Alphacoeur › <strong>Réglages › Mode serveur</strong>, puis touchez <strong>« Activer le mode serveur »</strong>.</li>
+  <li><strong>Abonnement</strong> : choisissez le palier ; le paiement passe par la boutique (Microsoft Store sur le PC ; sinon « S'abonner depuis mon téléphone »).</li>
+  <li><strong>Téléchargement du cerveau</strong> : le meilleur cerveau pour cet ordinateur se télécharge et s'installe tout seul (taille affichée avant).</li>
+  <li><strong>QR code</strong> : un QR code et un code à 6 chiffres s'affichent pour connecter le premier appareil.</li>
+</ol>
+<p><strong>Sur les téléphones, tablettes et autres ordinateurs :</strong> Alphacoeur › <strong>Réglages › Se connecter à un serveur</strong>, sur le même réseau (Wi‑Fi ou câble). Scannez le QR code, ou tapez le code à 6 chiffres et vérifiez que l'empreinte est la même que sur le serveur. Pour se déconnecter : même écran, « Retirer ce serveur » ; l'appareil reprend alors son propre cerveau.</p>
+<p><strong>Désactiver le mode serveur :</strong> sur le serveur, Réglages › Mode serveur › « Désactiver le mode serveur ». Les appareils connectés reprennent leur propre cerveau. Pensez à résilier l'abonnement dans la boutique ; pour tout effacer du PC (comptes, mémoire, journal) : « Installer-Alphacoeur.cmd /desinstaller /tout ». Guide complet : <a href="serveur.html">guide de l'administrateur</a>.</p>
+
+<h2 id="fr-maj">Mises à jour</h2>
+<ul>
+  <li><strong>iPhone, iPad, Mac</strong> : par l'App Store, automatiquement si les mises à jour automatiques sont activées.</li>
+  <li><strong>Android</strong> : par Google Play, selon le réglage de mise à jour du Play Store.</li>
+  <li><strong>Windows</strong> : par le Microsoft Store ; avec l'installateur des entreprises, Windows vérifie les mises à jour tout seul (au lancement et en arrière-plan).</li>
+  <li><strong>Serveur</strong> : il se met à jour lui-même, sans perdre les comptes, la mémoire ni l'abonnement ; si une nouvelle version ne démarre pas, il revient tout seul à la précédente.</li>
+  <li><strong>Nouveaux cerveaux</strong> : la liste des cerveaux proposés peut s'enrichir sans mise à jour de l'app (fichier signé par l'éditeur, vérifié par l'app).</li>
+</ul>
+<p>Vos données sont gardées à chaque mise à jour.</p>
+
+<h2 id="fr-faq">Questions fréquentes</h2>
 
 <h3>Je n'entends pas la voix d'Alphacoeur.</h3>
 <p>Vérifiez le volume de l'appareil, puis que « Mode muet (réponses écrites) » est désactivé dans Réglages › Voix. Touchez « Essayer la voix » au même endroit. Alphacoeur utilise les voix d'Apple installées sur l'appareil ; pour une voix plus naturelle, téléchargez une voix française améliorée dans Réglages de l'iPhone › Accessibilité › Contenu énoncé › Voix › Français.</p>
@@ -84,6 +144,24 @@
 <h3>Alphacoeur marche-t-il sans Internet ?</h3>
 <p>Oui, une fois le cerveau téléchargé : conversation, notes, mémoire, liste de courses, minuteurs, alarmes, rappels, calculs, conversions et recettes fonctionnent hors ligne. La météo, les recherches sur Wikipédia, les taux de change, l'IA en ligne et l'abonnement (achat, restauration) demandent une connexion. Une demande faite sans réseau est gardée sur l'appareil et envoyée au retour de la connexion.</p>
 
+<h3 id="fr-puissance">Plus de puissance ?</h3>
+<p>Le cerveau d'Alphacoeur tourne sur l'appareil : sa taille dépend de la <strong>mémoire de l'appareil</strong>. Plus il y a de mémoire, plus le cerveau est grand, et plus les réponses sont riches et précises. Alphacoeur choisit tout seul le meilleur cerveau qui tient sur l'appareil.</p>
+<p>Pour des réponses plus puissantes : installez Alphacoeur sur un <strong>ordinateur plus puissant</strong>, à la maison ou au bureau, activez le <strong>mode serveur</strong>, puis connectez-y vos téléphones, tablettes et ordinateurs. Ils profitent alors du grand cerveau de cet ordinateur, par votre réseau local : <strong>rien ne part sur Internet</strong>. Voir <a href="serveur.html">le guide du serveur</a> et <a href="#fr-serveur">se connecter au serveur</a>.</p>
+<table>
+  <thead><tr><th scope="col">Mémoire de l'appareil</th><th scope="col">Cerveau (taille du modèle)</th></tr></thead>
+  <tbody><tr><td>3 Go</td><td>0.6B</td></tr><tr><td>6 Go</td><td>1.7B</td></tr><tr><td>8 Go</td><td>4B</td></tr><tr><td>12 Go et plus</td><td>8B</td></tr><tr><td>PC 16 Go + carte graphique 12 Go</td><td>14B</td></tr><tr><td>Serveur 64 à 96 Go</td><td>80B</td></tr><tr><td>Serveur 256 Go et plus</td><td>235B et plus</td></tr></tbody>
+</table>
+<p class="note">Repères indicatifs : le choix exact dépend aussi de la carte graphique, de la place libre et des cerveaux disponibles dans le catalogue au moment de l'installation.</p>
+
+<h3>Sur Windows, Alphacoeur ne comprend pas ce que je dicte.</h3>
+<p>Hors ligne, la reconnaissance de Windows comprend les commandes et les principales phrases d'urgence, pas la dictée libre. Écrivez votre question, ou activez la dictée libre dans les Réglages d'Alphacoeur (elle passe alors par un service en ligne de Microsoft). Vérifiez aussi que le micro est autorisé : Paramètres de Windows › Confidentialité et sécurité › Microphone.</p>
+
+<h3>Sur Android, le micro ne s'ouvre pas.</h3>
+<p>Alphacoeur utilise la reconnaissance vocale sur l'appareil (Android 12 ou plus récent), avec la langue française téléchargée sur le téléphone. Sinon, écrivez à Alphacoeur, ou activez « Reconnaissance du système » dans ses Réglages. Vérifiez l'autorisation : Paramètres › Applications › Alphacoeur › Autorisations › Micro.</p>
+
+<h3>J'ai changé de téléphone ou d'ordinateur.</h3>
+<p>Installez Alphacoeur, puis restaurez une sauvegarde Alphacoeur (Réglages › Sauvegarde) si vous en avez fait une. L'abonnement revient avec le même compte de boutique (Apple, Google ou Microsoft). Un abonnement acheté sur une boutique ne se transfère pas à une autre boutique.</p>
+
 <h2>Contact</h2>
 <p>Pour toute question : <a href="mailto:barth.contact.alpha@gmail.com">barth.contact.alpha@gmail.com</a>.</p>
 </section>
@@ -91,12 +169,13 @@
 <hr>
 
 <section id="en" lang="en">
-<p class="lang"><a href="#fr" hreflang="fr" lang="fr">Version française</a></p>
+<p class="lang"><a href="#fr" hreflang="fr" lang="fr">Version française</a> · <a href="./">Home</a></p>
 <h1>Alphacoeur Support</h1>
-<p class="date">Last updated: November 5, 2026</p>
+<p class="date">Last updated: November 6, 2026</p>
+<p>Jump to: <a href="#en-install">Install</a> · <a href="#en-subscription">Subscription</a> · <a href="#en-server">Connect to a server</a> · <a href="#en-turn-on">Turn on server mode</a> · <a href="#en-updates">Updates</a> · <a href="#en-erase">Erase my data</a> · <a href="#en-emergencies">Emergencies</a> · <a href="#en-power">More power?</a> · <a href="#en-faq">FAQ</a></p>
 
 <h2>What is Alphacoeur?</h2>
-<p>Alphacoeur is a private voice assistant for iPhone and iPad (iOS 18 or later). Its AI brain runs on the device: notes, shopping list, memory, timers, alarms, reminders, calculations, recipes and conversation work even offline, once the brain is downloaded. No account, no ads, no tracking: your data stays on your device.</p>
+<p>Alphacoeur is a private voice assistant for iPhone, iPad, Mac, Android and Windows. Its AI brain runs on the device: notes, shopping list, memory, timers, alarms, reminders, calculations, recipes and conversation work even offline, once the brain is downloaded. No account, no ads, no tracking: your data stays on your device.</p>
 
 <h2>Getting started</h2>
 <ul>
@@ -106,12 +185,21 @@
   <li><strong>Wake word “Alpha”</strong> (subscription, off by default): turn it on in Settings › Listening › Wake word “Alpha”. Then say “Alpha, quelle heure est-il ?” without touching the screen. It only listens while Alphacoeur is on screen, never in the background; everything is recognized on the device and nothing is recorded.</li>
   <li><strong>Siri</strong>: “Hey Siri, ask Alphacoeur” passes your request to it.</li>
 </ul>
-<p>Settings open with the gear icon at the top right of the home screen.</p>
+<p>Settings open with the gear icon at the top right of the home screen. The wake word and Siri described here apply to iPhone, iPad and Mac; on Android and Windows, tap the logo or type.</p>
+
+<h2 id="en-install">Installing Alphacoeur</h2>
+<ul>
+  <li><strong>iPhone and iPad</strong>: on the App Store (iOS / iPadOS 18 or later).</li>
+  <li><strong>Mac</strong>: on the Mac App Store (Mac with Apple silicon, macOS 15 or later).</li>
+  <li><strong>Android</strong>: on Google Play (coming soon), Android 8.0 or later. On-device speech recognition needs Android 12 or later; on earlier versions, type to Alphacoeur.</li>
+  <li><strong>Windows</strong>: on the Microsoft Store (coming soon), or with the installer provided to businesses: double-click “Installer-Alphacoeur.cmd” and answer “Yes” to Windows. Windows 10 (version 2004) or later, Windows 11, Windows Server 2022 / 2025 with Desktop Experience; x64 PC.</li>
+</ul>
+<p>On first launch, Alphacoeur offers to download the AI brain suited to the device; its size is shown before it starts. Without a brain, commands already work.</p>
 
 <h2>Languages</h2>
 <p>In this version, commands (timers, reminders, notes, calculations…), spoken or typed, are understood <strong>in French</strong>. Free conversation follows your language. The interface is translated into 18 languages: French, English, German, Spanish, Italian, Portuguese (Brazil), Japanese, Simplified and Traditional Chinese, Dutch, Polish, Russian, Ukrainian, Turkish, Korean, Arabic, Hindi and Swedish. Health and emergency answers are in French, with French phone numbers.</p>
 
-<h2>Free version and subscription</h2>
+<h2 id="en-subscription">Free version and subscription</h2>
 <p>Alphacoeur is free to download. The free version includes unlimited basic commands (time, weather, timers, alarms, reminders, notes, shopping list, calculations, recipes…) and 10 free-form answers from the brain per day, with the smallest brain.</p>
 <p><strong>Alphacoeur Premium</strong> (€4.99 per month in France; the local price is shown in the app) unlocks the whole app: the best brain for your device, unlimited conversation, measure and 3D scan, documents, photo and file search, transfers between devices, missions, scenarios, skills and projects, deep research, online AI with your own key, the wake word and hands-free conversation. A 7-day free trial is shown if your account is eligible.</p>
 <p class="note"><strong>Emergency, health and privacy features are always free</strong>: emergency numbers, health pointers, erasing your data, privacy settings, backup and restore.</p>
@@ -121,20 +209,32 @@
   <li><strong>Restore Purchases</strong> (new device, reinstalled app): Settings › Subscription, then “Restore Purchases”, with the same Apple Account.</li>
   <li><strong>Refunds</strong>: handled by Apple, at reportaproblem.apple.com.</li>
 </ul>
+<p>These paths apply to iPhone and iPad. On other devices, the subscription is managed in the store where it was bought:</p>
+<ul>
+  <li><strong>Mac</strong>: App Store › your name (bottom left) › Account Settings › Subscriptions › Manage.</li>
+  <li><strong>Android (Google Play)</strong>: Play Store app › your profile picture › Payments &amp; subscriptions › Subscriptions › Alphacoeur. Purchases come back automatically with the same Google account; refunds are requested from Google Play, from your account's order history.</li>
+  <li><strong>Windows (Microsoft Store)</strong>: account.microsoft.com › Services &amp; subscriptions › Alphacoeur › Manage. Purchases come back with the same Microsoft account; refunds are requested from Microsoft support.</li>
+</ul>
+<p>The publisher neither sees nor handles any payment: it cannot cancel or refund on your behalf. <strong>Invoices</strong> (businesses): they are issued by the store (Apple, Google or Microsoft), from your account or the receipt sent by email.</p>
 
 <h2>Privacy in short</h2>
 <p>No account, no Alphacoeur server, no ads or tracking: the publisher receives no data. Your voice is recognized on the device and never sent. When an answer needs the Internet (weather, Wikipedia, currencies), only the necessary request goes to the relevant public service, cleaned of anything about you. Your calendar never leaves the device. To see exactly what leaves: Features › Settings and control › What leaves the device.</p>
 <p>Full details: <a href="privacy-policy-en.html">Privacy Policy</a>.</p>
 
-<h2>Erasing all your data</h2>
+<h2 id="en-erase">Erasing all your data</h2>
 <p>Settings (gear icon) › “Erase” section › “Erase all my data”, then confirm with “Erase”. Notes, memory, lists, scenarios, missions, skills, authorized devices, received files, online AI keys, measurements, log and settings are erased; only downloaded brains remain (delete them in Features › Settings and control › AI models). This is permanent unless you have a backup. Deleting the app also erases everything.</p>
 <p>The same section lets you erase only the conversation, the photo analysis, the file folder, the action log or the settings.</p>
+<ul>
+  <li><strong>Android</strong>: same section in Alphacoeur's Settings, or phone Settings › Apps › Alphacoeur › Storage › Clear data. Uninstalling the app erases everything (Google backup of Alphacoeur's data is turned off).</li>
+  <li><strong>Windows</strong>: same section in Alphacoeur's Settings, or Windows Settings › Apps › Installed apps › Alphacoeur › Advanced options › Reset. Uninstalling the app erases everything.</li>
+  <li><strong>Team server</strong>: your memory on the server is erased from your device, in Settings › Connect to a server. The administrator can also delete your account and all its data. To remove the server itself and its data: “Installer-Alphacoeur.cmd /desinstaller /tout” on the server PC.</li>
+</ul>
 
 <h2>Reporting an answer</h2>
 <p>Answers written by an AI (local brain or online AI) can be wrong. Long-press the answer, then choose “Report this answer”. An email is prepared with only your question, the answer, its origin and the app version. Nothing is sent automatically: you review it and decide whether to send it.</p>
 
-<h2>Health and emergencies</h2>
-<p class="note"><strong>Alphacoeur is not a doctor.</strong> It gives general pointers and does not replace a doctor, a pharmacist or emergency services. <strong>In an emergency, call 15 (SAMU, France) or 112 (Europe).</strong> Alphacoeur displays or reads emergency numbers, but never calls anyone.</p>
+<h2 id="en-emergencies">Health and emergencies</h2>
+<p class="note"><strong>Alphacoeur is not a doctor.</strong> It gives general pointers and does not replace a doctor, a pharmacist or emergency services. <strong>In an emergency, call 15 (SAMU, France) or 112 (Europe).</strong> Alphacoeur displays or reads emergency numbers, but never calls anyone. This is true on every platform, and with a team server too: never rely on Alphacoeur (or on the office network) to alert emergency services.</p>
 
 <h2>Devices</h2>
 <ul>
@@ -142,9 +242,44 @@
   <li><strong>Measure &amp; 3D scan</strong>: only on iPhone Pro and iPad Pro models with a LiDAR sensor. On other devices, this feature does not appear.</li>
   <li>Alarms that ring like the Clock app: iOS 26.1 or later; on earlier versions they are notifications.</li>
   <li>Transfers between devices: two devices with Alphacoeur, on the same Wi‑Fi, paired with a 6-digit code.</li>
+  <li><strong>Android</strong>: Android 8.0 or later; 6 GB of memory or more recommended for a comfortable local brain.</li>
+  <li><strong>Windows</strong>: Windows 10 (version 2004) or later, x64 PC; 8 GB of memory or more recommended.</li>
+  <li>Measure &amp; 3D scan, photo search: iPhone, iPad and Mac only.</li>
 </ul>
 
-<h2>Frequently asked questions</h2>
+<h2 id="en-server">Connecting to your team's server</h2>
+<p>If your organization has installed <strong>Alphacoeur Server</strong> on an office PC, your devices can use its more powerful brain, without your conversations leaving the office network. Administrator guide: <a href="serveur.html#en">installing the server</a>.</p>
+<ol>
+  <li>Ask the administrator to open “Add a device” on the server PC: a QR code and a 6-digit code appear (valid for 10 minutes).</li>
+  <li>On your device, connected to the office Wi‑Fi: Alphacoeur Settings › Connect to a server.</li>
+  <li>Scan the QR code (allow the camera), or type the 6-digit code and check that the fingerprint shown matches the one on the server PC.</li>
+  <li>Done: your questions now go to the server. Away from the office, the app falls back to its own brain, unless your organization has set up a VPN.</li>
+</ol>
+<p>If the device can't find the server: check that you are on the same Wi‑Fi (not a “guest” network), that the server PC is on, then try again. Allow “Local Network” (iPhone, iPad, Mac) or “Nearby devices” (Android) if the app asks. To disconnect: Settings › Connect to a server › Remove this server.</p>
+
+<h2 id="en-turn-on">Turning on server mode</h2>
+<p><strong>On which devices?</strong> Server mode is available today on <strong>Windows PCs</strong> (Windows 10 version 2004 or later, Windows 11, Windows Server 2022 / 2025 with Desktop Experience). <strong>Mac</strong> with Apple silicon: coming soon, in the same app. <strong>Phones and tablets</strong> (iPhone, iPad, Android) cannot be servers: they connect to a server.</p>
+<p><strong>On the computer that will be the server:</strong></p>
+<ol>
+  <li>Open Alphacoeur › <strong>Settings › Server mode</strong>, then tap <strong>“Turn on server mode”</strong>.</li>
+  <li><strong>Subscription</strong>: pick the tier; payment goes through the store (Microsoft Store on the PC; otherwise “Subscribe from my phone”).</li>
+  <li><strong>Brain download</strong>: the best brain for this computer downloads and installs on its own (size shown first).</li>
+  <li><strong>QR code</strong>: a QR code and a 6-digit code appear to connect the first device.</li>
+</ol>
+<p><strong>On phones, tablets and other computers:</strong> Alphacoeur › <strong>Settings › Connect to a server</strong>, on the same network (Wi‑Fi or cable). Scan the QR code, or type the 6-digit code and check that the fingerprint matches the one on the server. To disconnect: same screen, “Remove this server”; the device then goes back to its own brain.</p>
+<p><strong>Turning server mode off:</strong> on the server, Settings › Server mode › “Turn off server mode”. Connected devices go back to their own brain. Remember to cancel the subscription in the store; to erase everything from the PC (accounts, memory, log): “Installer-Alphacoeur.cmd /desinstaller /tout”. Full guide: <a href="serveur.html#en">administrator guide</a>.</p>
+
+<h2 id="en-updates">Updates</h2>
+<ul>
+  <li><strong>iPhone, iPad, Mac</strong>: through the App Store, automatically if automatic updates are on.</li>
+  <li><strong>Android</strong>: through Google Play, according to the Play Store's update setting.</li>
+  <li><strong>Windows</strong>: through the Microsoft Store; with the business installer, Windows checks for updates on its own (at launch and in the background).</li>
+  <li><strong>Server</strong>: it updates itself, without losing accounts, memory or the subscription; if a new version does not start, it automatically goes back to the previous one.</li>
+  <li><strong>New brains</strong>: the list of available brains can grow without an app update (a file signed by the publisher, checked by the app).</li>
+</ul>
+<p>Your data is kept with every update.</p>
+
+<h2 id="en-faq">Frequently asked questions</h2>
 
 <h3>I can't hear Alphacoeur's voice.</h3>
 <p>Check the device volume, then make sure “Mute mode (written answers)” is off in Settings › Voice. Tap “Try the voice” in the same place. Alphacoeur uses the Apple voices installed on the device; for a more natural voice, download an enhanced French voice in iPhone Settings › Accessibility › Spoken Content › Voices › French.</p>
@@ -157,6 +292,24 @@
 
 <h3>Does Alphacoeur work without the Internet?</h3>
 <p>Yes, once the brain is downloaded: conversation, notes, memory, shopping list, timers, alarms, reminders, calculations, conversions and recipes work offline. Weather, Wikipedia searches, exchange rates, online AI and the subscription (purchase, restore) need a connection. A request made without a network is kept on the device and sent when the connection comes back.</p>
+
+<h3 id="en-power">More power?</h3>
+<p>Alphacoeur's brain runs on the device: its size depends on the <strong>device's memory</strong>. The more memory, the bigger the brain, and the richer and more accurate the answers. Alphacoeur picks the best brain that fits on the device on its own.</p>
+<p>For more powerful answers: install Alphacoeur on a <strong>more powerful computer</strong>, at home or at the office, turn on <strong>server mode</strong>, then connect your phones, tablets and computers to it. They then use that computer's big brain, over your local network: <strong>nothing goes to the Internet</strong>. See <a href="serveur.html#en">the server guide</a> and <a href="#en-server">connecting to the server</a>.</p>
+<table>
+  <thead><tr><th scope="col">Device memory</th><th scope="col">Brain (model size)</th></tr></thead>
+  <tbody><tr><td>3 GB</td><td>0.6B</td></tr><tr><td>6 GB</td><td>1.7B</td></tr><tr><td>8 GB</td><td>4B</td></tr><tr><td>12 GB or more</td><td>8B</td></tr><tr><td>PC with 16 GB + 12 GB graphics card</td><td>14B</td></tr><tr><td>Server with 64 to 96 GB</td><td>80B</td></tr><tr><td>Server with 256 GB or more</td><td>235B and more</td></tr></tbody>
+</table>
+<p class="note">Indicative guide: the exact choice also depends on the graphics card, free disk space and the brains available in the catalog at installation time.</p>
+
+<h3>On Windows, Alphacoeur doesn't understand my dictation.</h3>
+<p>Offline, Windows speech recognition understands commands and the main emergency phrases, not free dictation. Type your question, or turn on free dictation in Alphacoeur's Settings (it then goes through an online Microsoft service). Also check that the microphone is allowed: Windows Settings › Privacy &amp; security › Microphone.</p>
+
+<h3>On Android, the microphone doesn't open.</h3>
+<p>Alphacoeur uses on-device speech recognition (Android 12 or later), with the French language downloaded on the phone. Otherwise, type to Alphacoeur, or turn on “System recognition” in its Settings. Check the permission: Settings › Apps › Alphacoeur › Permissions › Microphone.</p>
+
+<h3>I changed phone or computer.</h3>
+<p>Install Alphacoeur, then restore an Alphacoeur backup (Settings › Backup) if you made one. The subscription comes back with the same store account (Apple, Google or Microsoft). A subscription bought in one store does not transfer to another store.</p>
 
 <h2>Contact</h2>
 <p>For any question: <a href="mailto:barth.contact.alpha@gmail.com">barth.contact.alpha@gmail.com</a>.</p>
