@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://barthcontactalpha.github.io/alphacoeur/sitemap.xml
